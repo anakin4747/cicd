@@ -1,0 +1,12 @@
+# Name the workflow
+name: My test workflow
+
+# Brackets aren't necessary but can be used to list
+on: [push]
+
+jobs: 
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello github actions"
+
